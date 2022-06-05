@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <style>
+#logo_img
+{
+    width: 150px;
+    border-radius: 100px;
+}
+#start-btn
+{
+    width: 40%;
+} 
+.copy_right_footer
+{
+    text-align: center;
+    width:100%;
+    bottom: 0;
+    position:fixed;
+    background-color: lightgrey;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#camera
+{
+    width:500px;
+    height: 400px;
+    border:1px solid grey;
+}
+img:hover{
+    border-radius: 140px;
+   
+}
+
+
+    </style>
+    <title>Collage Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<center>
+    <h1><b>Collage web app</b>
+        <img id="logo_img" src="selfie.avif">
+    </h1>
+    <hr>
+    <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</b></h4>
+    <h3><b>Say "selfie" for Taking your selfies and to make a Collage</h3>
+    <button class="btn btn-primary" onlick="save()">Start</button>
+    <h4>Press the Start button</h4>
+    <label>Yor webcam :</label>
+    <div id="camera"></div>
+        <label>Your selfie Will Display Here</label>
+        <div id="resultShow">
+            <div id="result1">
+                <img src="pic1.jpg" style="width:20%; border:2px solid red;">
+            </div>
+            <div id="result2"> 
+                <img src="pic2.jpg" style="width:20%; border:2px solid red;" >
+            </div>
+            <div id="result3">
+                <img src="pic3.jpg" style="width:20%; border:2px solid red;">
+            </div>
+        </div>
+    
+
+
+</center>
+</body>
+<div class="copy_right_footer">
+    Devloped by - Medhansh
+</div>
+</html>
